@@ -825,7 +825,7 @@ class PHPExcel_Reader_Excel2007 extends PHPExcel_Reader_Abstract implements PHPE
 									}
 
 									foreach ($row->c as $c) {
-										$r 					= (string) $c["r"];
+										$r 					= strtoupper($c["r"]);
 										$cellDataType 		= (string) $c["t"];
 										$value				= null;
 										$calculatedValue 	= null;
